@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.8fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 7.19fr 0.469fr;
+    grid-template-areas: "logo . navigaton navigaton navigaton" "wrapper wrapper wrapper wrapper wrapper" "wrapper wrapper wrapper wrapper wrapper" "footer footer footer footer footer";
+  }
+  
+  .logo { grid-area: logo; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 45%;
+    background-color: white;}
+  
+  .navigaton { grid-area: navigaton; 
+    height: 100px;}
+  
+  .footer { grid-area: footer; }
+  
+  .wrapper { grid-area: wrapper; }
+
+  .navigaton ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  
+  .navigaton li {
+    float: left;
+  }
+  
+  .navigaton li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+    width: 265px;
+    height: 21px;
+    text-decoration: none;
+    font-size: 130%;
+    font-family: Segoe UI;
+  
+  }
+  
+  .navigaton li a:hover {
+    background-color: whitesmoke;
+  }
+  .navigaton li .active{
+      background-color: whitesmoke;
+  }
+  .logo img{
+    padding: 10px 0px 7px 65px;
+    width:153px;
+    height:80px;
+    
+  }
+
+  .wrapper{
+      background-image: url('other_background.png');
+      /* background-size: contain;
+      background-repeat: no-repeat; */
+      background-size: 100% 100%;
+      font-family: Segoe UI;
+      text-decoration: none !important;
+  }
+
+  .wrapper h1 {
+    font-size: 75px;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding-left: 30px;
+    color: whitesmoke;
+    border-left: white 1px solid;
+  }
+
+  .wrapper h3{
+    margin-top: 40px;
+    margin-left: 61px;
+    color: whitesmoke;
+    font-size: 135%;
+    line-height: 1.4;
+    font-family: Segoe UI;
+  }
+
+  .wrapper .span1{
+    line-height: 3;
+  }
+  
+  .envelope {
+    float:right;
+    margin-top: 160px;
+    margin-right:50px;
+        /* position: absolute;
+        bottom: 100px;
+        right: 50px; */
+  }
+  .footer{
+    text-align: center;
+    line-height: 3;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cet233_website",
+  "version": "1.0.0",
+  "description": "marketing website for cet233 CSN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian_Janik",
+  "license": "ISC"
+}
